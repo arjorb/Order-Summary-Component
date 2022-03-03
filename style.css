@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--paleBlue);
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: var(--veryPaleBlue);
+  width: 370px;
+  height: auto;
+  border-radius: 15px;
+}
+.card-header {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+.card-header img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.body-description h2 {
+  color: var(--darkBlue);
+}
+
+.body-description p {
+  width: 90%;
+  margin: 1rem auto;
+  font-size: 15px;
+  color: var(--desaturatedBlue);
+}
+
+.body-card {
+  width: 85%;
+  background-color: rgba(9, 77, 141, 0.041);
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body-card-left {
+  display: flex;
+  align-items: center;
+}
+.body-card-description {
+  margin: 0 0.5rem;
+}
+.body-card-description h4 {
+  color: var(--darkBlue);
+}
+.body-card-description p {
+  color: var(--desaturatedBlue);
+}
+
+#change {
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--brightBlue);
+}
+.card-footer{
+    display: flex;
+    flex-direction: column;
+}
+button {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0.7rem 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--brightBlue);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 2px 10px var(--brightBlue);
+}
+.card-footer p {
+  text-align: center;
+  margin: 0.7rem 0rem 2rem 0;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--desaturatedBlue);
+}
